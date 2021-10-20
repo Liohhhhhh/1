@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+     <head>
+         <meta charset="utf-8">
+         <title>必应</title>
+         <style>           
+         
+            html{
+                background-color: transparent;
+                overflow: hidden;
+                width: 100%;
+                height: 100%;
+            }
+
+
+
+            body{
+                width: 100%;
+                height: 100%;
+                background-image: url("./background.jpg");
+                 background-repeat: no-repeat;
+                 background-size: 100%;
+                 margin: 0px 0px;
+                }
+            
+            a{
+                text-decoration: none;
+            }
+
+            li{
+                list-style: none
+            }
+
+            .wenzi,.wenzi img,.wenzi li{
+                float: left;
+            }
+
+          
+
+            .user{
+                float:right;
+                margin-right: 160px;
+                margin-top: 10px;
+            }
+
+           #user{
+               width: 32px;
+               height: 32px;
+               border-radius: 16px;
+               background-color: #ececec;
+               margin-top: 6px;
+               margin-bottom: 7px;
+               margin-right: 40px;
+
+            }     
+
+            #back{
+               width: 40px;
+               height: 40px;
+               background-color: rgb(66, 65, 65);
+               border-top-left-radius: 6px;
+               border-top-right-radius: 6px;
+               border-bottom-left-radius: 6px;
+               border-bottom-right-radius:  6px; 
+               
+            }
+
+            #forward{
+               width: 40px;
+               height: 40;
+               background-color: rgb(66, 65, 65);
+               border-top-left-radius: 6px;
+               border-top-right-radius: 6px;
+               border-bottom-left-radius: 6px;
+               border-bottom-right-radius:  6px; ;
+            }
+
+            #menu{
+               height: 45px;
+               width: 36px;
+               background-color: transparent;
+            }
+
+            
+
+            #logo{
+             width: 154px;
+             height: 22px;
+             transform: translate(0,12px) scale(1.16);
+             filter: drop-shadow(0 0 22px rgba(0,0,0,.45));
+             float: left;
+             margin-left: 153.6px;
+            }
+
+            .wenzi a{
+                font-size: 13px;
+                line-height: 20px;
+                color: rgb(168,174,186);
+                padding: 0 15px;
+
+            }
+
+            .wenzi a:hover{
+                color: rgb(230, 240, 240);
+            }
+
+           
+
+            #location{
+                width: auto;
+                height: 16px;
+                display: inline;
+            }
+            
+
+            
+            #xx{
+               font-size: 22px;
+               display: inline;
+               font-weight: inherit;
+               font-size: inherit;
+            }
+
+            .dt{
+                margin-right: 6.5px;
+                height: 40px;
+                background-size: 100%;
+                background-color: rgb(66, 65, 65);
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius:  6px;
+
+            }
+
+            #ditu{
+                line-height:40px;;
+                color: #fff;
+                text-decoration: none;
+                padding-bottom: 1px;
+                padding-top: 1px;
+                padding-left: 10px;
+                padding-right: 10px;
+                
+            
+            }
+
+            .headline{
+                float: right;
+                position: absolute;
+                bottom: 55px;
+                right: 172px;
+            }
+            
+            .nav,.dt{
+                float: left;
+            }
+
+
+          .foot{
+            
+            width: 80%;
+            min-width: 768px;
+            padding: 0 10%;
+            line-height: 35px;
+
+
+           
+             height: 45px;
+             background-color: rgb(51,51,51);
+             margin-bottom: 0;
+             position: absolute;
+             bottom: 0;
+         
+            
+            
+            }
+
+          .foot li{
+              
+              float: left;
+              padding: 1px;
+              line-height: 50px;
+            }
+            
+            .foot li a{
+                display:block;
+                text-decoration: none;
+                color: rgb(102, 102, 102);
+                font-size: .8125rem;
+                padding: 0 14px;
+            }
+
+            .foot li a:hover{
+                text-decoration: underline rgb(102, 102, 102) ;
+            }
+
+            #shang{
+                display: inline;
+            }
+
+            form{
+                background-color: transparent;
+                padding: 12px 10px;
+                flex: 1;
+                border: 0;
+                outline: none;
+                position: absolute;
+                padding: 0 0;
+                display: inline;
+                left: 478px;
+                top: 180px;
+                
+            }
+            
+            #search{
+                width: 32px;
+                height: 33px;
+                background-color: #ececec;
+                position: relative;
+                right: 0;
+                display: inline;
+                margin-bottom: -13px;
+                right: 90px;
+                
+            }
+
+            #mi{
+                width: 32px;
+                height: 33px;
+                background-color: #ececec;
+                position: relative;
+                display: inline;
+                margin-bottom: -13px;
+                right: 85px;
+            }
+
+            #ssk{
+                width: 511px;
+                height: 45px;
+                border-top-left-radius: 6px;
+                border-top-right-radius: 6px;
+                border-bottom-left-radius: 6px;
+                border-bottom-right-radius:  6px; 
+                background-color: #ececec;
+                align-items: center;
+                border-color: #ececec;
+                
+            }
+
+            #submit{
+                 padding: 0;
+                 height: 0;
+                 width: 0;
+                 visibility: hidden;
+            }
+
+           /*form,#mi,#submit,#search{
+                float: left;
+                
+            }
+            */
+         </style>
+    </head>
+
+    <body>
+        
+<div class="top-wai">
+        <div class="top">
+            <img id=logo src="./图标/OIP-C(已去底) (1).png" alt="">
+            <ul class="wenzi">
+                
+                <li><a href="#">图片</a></li>
+                <li><a href="#">视频</a></li>
+                <li><a href="#">...</a></li>
+            </ul>
+
+            <ul class="user">
+                <img id=user src="./图标/user.png" alt="">
+                <img id=menu src="./图标/menu.png" alt="设置和快速链接">
+            </ul>
+        </div>
+</div>
+
+
+<div class="ssk">
+    <div id="shang">
+        <div id="guonie">
+            "国内版"
+        </div>
+        <div id="guowai">
+            "国外版"
+        </div>
+    </div>
+        <form action="">
+            
+            <input id="ssk" type="search">
+            <img id=mi src="./图标/microphone-.png" alt="">
+            <input id="submit" type="submit">
+            <label for="submit" class="tj">
+            <img id=search src="./图标/search.png" alt="">
+     </form>
+    
+
+</div>
+
+
+        
+       
+        
+        
+        
+
+
+        <div class="headline">
+            <div class="dt">
+                <a id=ditu href="">
+                    <img id=location src="./图标/icons8-location-64.png" alt="">
+                    <h1 id="xx">信息</h1>
+                </a>
+            </div>
+
+            <div class="nav">
+                <img id=back src="./图标/back.png" alt="">
+                <img id=forward src="./图标/forward.png" alt="">
+            </div>
+        </div>
+
+        
+          <ul class="foot">
+              <li><a href="#">增值电信业务经营许可证：合字B2-20090007</a></li>
+              <li><a href="#">京ICP备10036305号-7</a></li>
+              <li><a href="#">京公网安备11010802022657号</a></li>
+              <li><a href="#">隐私与Cookie</a></li>
+              <li><a href="#">法律声明</a></li>
+              <li><a href="#">广告</a></li>
+              <li><a href="#">关于我们的广告</a></li>
+              <li><a href="#">帮助</a></li>
+              <li><a href="#">反馈</a></li>
+          </ul>
+    </body>
+ 
+</html>
+
+
+
+
+
+
+
+
